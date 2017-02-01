@@ -18,8 +18,11 @@ $("#search").on("click", function(){
 function showResults(tracks){
     var track = tracks.results;
     for(var i = 0; i <track.length;i++){
-      $results.append('<tr><td>'+ track[i].artistName +'</td>'+'<td>'+ track[i].trackName +' </td></tr>');
-
+      $results.append('<tr><td>'+ track[i].artistName +'</td>'
+      +'<td>'+ track[i].trackName +' </td>'
+      +'<td>'+ track[i].collectionName +' </td>'
+      +'<td><img src='+track[i].artworkUrl100+' alt="" border=3 height=100 width=100></img></td>'
+      +'<td>'+'<audio controls>'+"<source src="+track[i].previewUrl+"></audio>"+'</td></tr>');
     }
 }
 

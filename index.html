@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <title>Whistle while you search...</title>
 </head>
@@ -14,19 +16,30 @@
     </center>
   </div>
   <div class= "container">
+    <center>
     <h2>iTunes Search</h2>
+  </center>
+    <center>
     <input type="text" id="artistSearch" placeholder="Enter Artist Here">
     <input type="text" id="songSearch" placeholder="Enter Song Here">
     <button id="search" class="btn btn-primary">Search</button>
+  </center>
     <div id="output"></div>
   </div>
-  <div>
-    <h3>Search Results</hr>
-      <table id ="results" class="table table-condensed table-hover">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <center>
+    <h3 class="title-text">Search Results</h3>
+    </center>
+      <table  id ="results" class="table table-condensed table-hover table-style" border-color='white'>
         <thead>
           <tr>
             <th>Artist</th>
             <th>Song</th>
+            <th>Album</th>
+            <th>Album Cover</th>
+            <th>Preview</th>
           </tr>
         </thead>
         <tbody>
@@ -35,11 +48,6 @@
         </tbody>
       </table>
     </div>
-
-
-
-
-
     <div class="col-md-12">
       <footer>
         <center>
